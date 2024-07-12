@@ -11,6 +11,11 @@ const form = document.querySelector("form");
 const clearAll = document.querySelector(".clearAll");
 const data = JSON.parse(localStorage.getItem("datas")) || [];
 
+console.log(addBtn);
+addBtn.addEventListener("click", () => {
+  console.log(1);
+});
+
 clearAll.addEventListener("click", () => {
   localStorage.clear();
   location.reload();
